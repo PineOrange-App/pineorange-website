@@ -276,12 +276,28 @@
       <h3>What Gets Deleted</h3>
       <p>When you confirm deletion, the following data is removed permanently:</p>
       <ul>
-        <li><strong>Firebase Authentication record</strong> (your UID, email address, display name, and any linked sign-in providers such as Apple or Google).</li>
-        <li><strong>Firestore user documents</strong> (profile settings, preferences, saved progress, recipes, or any other documents stored under your UID).</li>
-        <li><strong>User-specific Cloud Storage files</strong> (e.g., profile photos or other uploads stored at paths that include your UID).</li>
-        <li><strong>RevenueCat subscriber attributes &amp; entitlements</strong> (all custom attributes and entitlement records linked to your app-specific user identifier).</li>
-        <li><strong>Locally cached data</strong> inside the app on your device.</li>
+        <li><strong>Firebase Authentication record</strong>  
+            (your UID, email address, display name, and linked providers such as Apple Sign-In or Google Sign-In)</li>
+        <li><strong>Firestore user documents</strong>  
+            (profile settings, preferences, saved progress, recipes, and any other documents under your UID)</li>
+        <li><strong>User-specific Cloud Storage files</strong>  
+            (e.g., profile photos or other uploads stored at paths that include your UID)</li>
+        <li><strong>RevenueCat custom subscriber attributes</strong>  
+            (any metadata you’ve set via RevenueCat’s Subscriber Attributes API)</li>
       </ul>
+      <p>Any server backups that already include your data will be purged automatically within <strong>30&nbsp;days</strong>.</p>
+
+      <h3>What <em>Does Not</em> Get Deleted</h3>
+      <ul>
+        <li><strong>RevenueCat purchase history and entitlements.</strong>  
+            Your App Store (iOS) or Google Play (Android) purchases remain intact.  
+            To restore them on the same device tied to your platform account, open PineOrange and tap <strong>Restore Purchases</strong>.</li>
+        <li><strong>Active subscriptions</strong> in your device’s subscription settings.  
+            You must cancel these manually via your Apple ID subscriptions (iOS Settings → Subscriptions) or Google Play Store account to stop future billing.</li>
+        <li><strong>Locally cached app data</strong> (any temporary or offline data created on your device).  
+            This will remain until you uninstall the app from your device.</li>
+      </ul>
+
       <p>Any server backups that already include your data will be purged automatically within <strong>30&nbsp;days</strong>.</p>
 
       <h3>What Does <em>Not</em> Get Deleted Automatically</h3>
